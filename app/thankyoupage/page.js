@@ -1,9 +1,18 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 
 export default function ThankYouPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ThankYouPageInner />
+    </Suspense>
+  );
+}
+
+function ThankYouPageInner() {
   const searchParams = useSearchParams();
   const fullName = searchParams.get("fullName") || "Applicant";
   const bd1_q1 = searchParams.get("bd1_q1") || "";
