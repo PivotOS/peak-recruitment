@@ -347,7 +347,7 @@ export default function PreApp() {
               aria-label="Before Day One informational video"
               className="w-full max-w-md rounded-lg"
             >
-              <source src="/bd1-video.mp4" type="video/mp4" />
+              <source src="https://firebasestorage.googleapis.com/v0/b/peak-platform-preapp.firebasestorage.app/o/bd1-video.mp4?alt=media&token=677af7f1-a298-4fde-91a0-b5eb900a488f" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <p className="mt-2 text-center">
