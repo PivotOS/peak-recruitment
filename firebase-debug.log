@@ -1,0 +1,83 @@
+[debug] [2025-06-16T12:39:10.679Z] ----------------------------------------------------------------------
+[debug] [2025-06-16T12:39:10.683Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\themi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2025-06-16T12:39:10.683Z] CLI Version:   14.7.0
+[debug] [2025-06-16T12:39:10.683Z] Platform:      win32
+[debug] [2025-06-16T12:39:10.683Z] Node Version:  v22.15.1
+[debug] [2025-06-16T12:39:10.683Z] Time:          Mon Jun 16 2025 08:39:10 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-06-16T12:39:10.684Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-16T12:39:10.686Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-06-16T12:39:10.983Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-16T12:39:10.983Z] > authorizing via signed-in user (themikefrazier@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\themi
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2025-06-16T12:39:11.162Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-06-16T12:39:11.162Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-16T12:39:14.986Z] Using project from CLI flag: peak-platform-preapp
+[debug] [2025-06-16T12:39:14.987Z] Checked if tokens are valid: false, expires at: 1749747817193
+[debug] [2025-06-16T12:39:14.987Z] Checked if tokens are valid: false, expires at: 1749747817193
+[debug] [2025-06-16T12:39:14.987Z] > refreshing access token with scopes: []
+[debug] [2025-06-16T12:39:14.988Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-06-16T12:39:14.988Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-16T12:39:15.164Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-06-16T12:39:15.164Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-16T12:39:15.178Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/peak-platform-preapp [none]
+[debug] [2025-06-16T12:39:15.580Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/peak-platform-preapp 200
+[debug] [2025-06-16T12:39:15.580Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/peak-platform-preapp {"projectId":"peak-platform-preapp","projectNumber":"1022674399620","displayName":"peak-recruitment","name":"projects/peak-platform-preapp","resources":{"hostingSite":"peak-platform-preapp"},"state":"ACTIVE","etag":"1_4a2f0a67-e9fc-43fd-b257-d8409642e33a"}
+[info] i  Using project peak-platform-preapp (peak-recruitment) 
+[info] 
+=== Functions Setup
+[debug] [2025-06-16T12:39:15.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-16T12:39:15.588Z] > authorizing via signed-in user (themikefrazier@gmail.com)
+[debug] [2025-06-16T12:39:15.588Z] [iam] checking project peak-platform-preapp for permissions ["firebase.projects.get"]
+[debug] [2025-06-16T12:39:15.589Z] Checked if tokens are valid: true, expires at: 1750081154164
+[debug] [2025-06-16T12:39:15.589Z] Checked if tokens are valid: true, expires at: 1750081154164
+[debug] [2025-06-16T12:39:15.589Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/peak-platform-preapp:testIamPermissions [none]
+[debug] [2025-06-16T12:39:15.589Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/peak-platform-preapp:testIamPermissions x-goog-quota-user=projects/peak-platform-preapp
+[debug] [2025-06-16T12:39:15.589Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/peak-platform-preapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-16T12:39:15.839Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/peak-platform-preapp:testIamPermissions 200
+[debug] [2025-06-16T12:39:15.839Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/peak-platform-preapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-16T12:39:15.839Z] Checked if tokens are valid: true, expires at: 1750081154164
+[debug] [2025-06-16T12:39:15.839Z] Checked if tokens are valid: true, expires at: 1750081154164
+[debug] [2025-06-16T12:39:15.840Z] Checked if tokens are valid: true, expires at: 1750081154164
+[debug] [2025-06-16T12:39:15.840Z] Checked if tokens are valid: true, expires at: 1750081154164
+[debug] [2025-06-16T12:39:15.840Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/peak-platform-preapp/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-06-16T12:39:15.840Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/peak-platform-preapp/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/peak-platform-preapp
+[debug] [2025-06-16T12:39:15.841Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/peak-platform-preapp/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-06-16T12:39:15.841Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/peak-platform-preapp/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/peak-platform-preapp
+[debug] [2025-06-16T12:39:16.292Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/peak-platform-preapp/services/runtimeconfig.googleapis.com 200
+[debug] [2025-06-16T12:39:16.292Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/peak-platform-preapp/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-06-16T12:39:16.299Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/peak-platform-preapp/services/cloudfunctions.googleapis.com 200
+[debug] [2025-06-16T12:39:16.299Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/peak-platform-preapp/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default, purgewarnings, newwarnings, warnings, peak-recruitment
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
