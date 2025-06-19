@@ -23,10 +23,10 @@ export default function Home() {
       {/* Card */}
       <section className="bg-white/95 border border-peak-gold rounded-3xl shadow-2xl px-8 py-10 max-w-xl w-full flex flex-col items-center">
         <h1 className="text-3xl md:text-4xl font-extrabold text-peak-gold mb-1 text-center drop-shadow-sm">
-          Welcome to <span className="text-gray-800">Peak Recruitment Platform</span>
+          Welcome to <span className="text-gray-800">The Peak Recruitment Platform</span>
         </h1>
         <p className="mb-8 text-lg md:text-xl text-gray-700 text-center max-w-xl font-medium">
-          Your gateway to top job postings, easy applications, and recruiter tools.
+          Your gateway to top job postings, easy applications, and master recruiter tools.
         </p>
         {/* Main Links */}
         <div className="w-full flex flex-col gap-5 sm:flex-row sm:gap-6 justify-center mb-4">
