@@ -1,0 +1,5 @@
+{
+  "/job-board/page": "app/job-board/page.js",
+  "/preapp/page": "app/preapp/page.js",
+  "/control-panel/page": "app/control-panel/page.js"
+}

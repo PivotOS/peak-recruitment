@@ -1,0 +1,17 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'peak-gold': '#F5A623',
+        'gold-500': '#F5A623',
+        'peak-blue': '#1877F2',
+      },
+    },
+  },
+  plugins: [],
+};

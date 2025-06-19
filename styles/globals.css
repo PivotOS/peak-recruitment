@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom global styles */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: #fdf7ee; /* fallback for your gradient */
+}
+
+/* Make sure images never overflow their containers */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: Smoother font rendering on webkit browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optional: Gold border utility if Tailwind's isn't working */
+.border-peak-gold {
+  border-color: #F5A623 !important;
+}
+
+/* Add any other custom styles below */
