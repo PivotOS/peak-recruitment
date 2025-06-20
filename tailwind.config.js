@@ -1,25 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,jsx,ts,tsx}",
-    "./components/**/*.{js,jsx,ts,tsx}",
-    "./pages/**/*.{js,jsx,ts,tsx}",
-    "./public/**/*.html",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        'peak-gold': '#F5A623',
-        'peak-blue': '#1877F2',
-        'gold-500': '#F5A623',
-      },
-      borderRadius: {
-        'xl': '1.25rem',      // 20px (Tailwind default, leave for compatibility)
-        '2xl': '2rem',        // 32px (custom for extra large card rounding)
-        '3xl': '2.5rem',      // 40px (for ultra-rounded corners)
-      },
-      fontFamily: {
-        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'peak-gold': 'var(--peak-gold)',
+        'peak-blue': 'var(--peak-blue)',
+        'peak-blue-hover': 'var(--peak-blue-hover)',
       },
     },
   },
